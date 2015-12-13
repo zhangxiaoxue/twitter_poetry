@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Twitter Poetry</title>
+
+    <link rel="stylesheet" href="https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans"/>
+    <link rel="stylesheet" href="https://www.google.com/fonts#UsePlace:use/Collection:Droid+Serif:400,400italic"/>
+
+    <!-- build:css assets/css/main.css -->
+    <link rel="stylesheet" href="bower_components/css-reset/reset.min.css"/>
+    <link rel="stylesheet" href="assets/css/animation.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <!-- endbuild -->
+</head>
+<body>
+<div class="map" id="map"></div>
+<div class="preloader">
+    <div class="preloader-icon">
+        <div class="loading"></div>
+    </div>
+    <div class="preloader-text">
+        <h1 class="preloader-text-line preloader-text-title preloader-text-line-1"><span class="remember">«I remember»</span> Poems about City Impression.</h1>
+        <p class="preloader-text-line preloader-text-line-2">Let's learn a city through poetry</p>
+        <!--<p class="preloader-text-line preloader-text-line-3">Click a city location to create a poem about this city</p>-->
+        <a href="javascript:;" class="btn btn-start">Start</a>
+    </div>
+</div>
+<div class="panel panel-poetry" id="panel-poetry">
+    <a class="close" href="javascript:;">
+        <svg>
+            <line x1="1" y1="20"
+                  x2="20" y2="1"
+                  stroke-width="1"/>
+            <line x1="1" y1="1"
+                  x2="20" y2="20"
+                  stroke-width="1"/>
+        </svg>
+    </a>
+    <div class="panel-main">
+        <h3 class="panel-title">Memory of <strong class="city"></strong></h3>
+        <div class="panel-content">
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Created by <a href="http://xiaoxuezhang.info" target="_blank">Xiaxue Zhang</a> 2015</p>
+    <p>Inspired by <a href="http://www.twc.org/resources/lessons/i-remember-poems-from-poetry-everywhere/">"I Remember" Poem</a></p>
+    <p>Data Source: <a href="https://dev.twitter.com/overview/api" target="_blank">Twitter</a></p>
+    <p>Text-mining: <a href="http://rednoise.org/rita/" target="_blank">RiTa</a></p>
+</div>
+
+<!-- build:js assets/js/plugins.js -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/d3/d3.min.js"></script>
+<script src="bower_components/d3-geo-projection/d3.geo.projection.min.js"></script>
+<script src="bower_components/topojson/topojson.js"></script>
+<script src="bower_components/rita/dist/rita-full.min.js"></script>
+<!-- endbuild -->
+<!-- build:js assets/js/main.js -->
+<script src="assets/js/twitter.js"></script>
+<script src="assets/js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

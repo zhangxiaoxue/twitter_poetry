@@ -1,0 +1,31 @@
+{
+  "name": "Twitter Poetry",
+  "authors": [
+    "xiaoxue zhang"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "twitter",
+    "poetry"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.5.10",
+    "jquery": "~2.1.4",
+    "rita": "~1.1.27",
+    "css-reset": "~2.5.1",
+    "d3-geo-projection": "~0.2.15",
+    "topojson": "~1.6.19"
+  }
+}
